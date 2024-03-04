@@ -118,7 +118,7 @@
   <div class="playlist">
     {#each playlist as song, index}
       <div class:playing={index === songPlayingIndex} class="song">
-        <span>{index + 1}.</span>
+        <img src="/svelte.svg" alt="Book Icon" class="book-icon" />
         <button data-index={index} on:click={playSelectedSong}>
           {playingState === 'playing' && index === songPlayingIndex ? '⏯️' : '▶️'}
         </button>
