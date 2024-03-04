@@ -8,18 +8,12 @@
   let isDarkMode = true; 
   let isLoading = false;
 
-  async function loadMessages() {
-  
     messageCount.set(messages.length);
   }
 
   async function loadMessages() {
     // Load more messages from the server or local storage if needed
     messageCount.set(messages.length);
-  }
-
-  async function loadMessages() {
- 
   }
 
   async function addMessage(message) {
