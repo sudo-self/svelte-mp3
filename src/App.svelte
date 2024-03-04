@@ -8,9 +8,6 @@
   let isDarkMode = true; 
   let isLoading = false;
 
-    messageCount.set(messages.length);
-  }
-
   async function loadMessages() {
     // Load more messages from the server or local storage if needed
     messageCount.set(messages.length);
@@ -138,7 +135,7 @@
 </div>
 
 
-  <h1>@iLostMyipad</h1>
+  <h2>@iLostMyipad</h2>
   <div class="message-count-container">
     <img src="/vite.svg" alt="Book Icon" class="book-icon" />
     <span>{$messageCount}</span>
