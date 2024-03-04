@@ -44,7 +44,6 @@
     if (scrollTop + clientHeight >= scrollHeight - 5 && !isLoading) {
       isLoading = true;
       setTimeout(() => {
-        addMessage("New message");
         isLoading = false;
       }, 1000);
     }
@@ -145,8 +144,8 @@
   </div>
   <button on:click={toggleDarkMode} style="margin-bottom: 10px;">Dark Mode</button>
   <form on:submit={handleSubmit}>
-    <input type="text" bind:value={messageText} placeholder="post a message.." required>
-    <button type="submit">POST</button>
+    <input type="text" bind:value={messageText} placeholder="comment on the mix..." required>
+    <button type="submit">comment</button>
   </form>
   <ul class="message-list">
     {#each messages as message}
