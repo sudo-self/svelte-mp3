@@ -4,7 +4,7 @@
   import { writable } from 'svelte/store';
   const messageCount = writable(0);
   let messageText = '';
-  let messages = ["love this!", "turn it up", "woah" "ayeeee"]; 
+  let messages = ["love this!", "turn it up", "woah" "ayeeee" "hot🔥"]; 
   let isDarkMode = true; 
   let isLoading = false;
 
