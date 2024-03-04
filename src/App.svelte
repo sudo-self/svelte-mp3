@@ -4,12 +4,12 @@
   import { writable } from 'svelte/store';
   const messageCount = writable(0);
   let messageText = '';
-  let messages = ["love this!", "Dj turn it up", "woah"]; // Add initial messages here
-  let isDarkMode = true; // Set dark mode to true initially
+  let messages = ["love this!", "Dj turn it up", "woah"]; 
+  let isDarkMode = true; 
   let isLoading = false;
 
   async function loadMessages() {
-    // Load more messages from the server or local storage if needed
+  
     messageCount.set(messages.length);
   }
 
@@ -19,13 +19,13 @@
   }
 
   async function loadMessages() {
-    // You can make an HTTP request here to load initial messages from the server if needed
+ 
   }
 
   async function addMessage(message) {
-    // You can make an HTTP request here to send the new message to the server if needed
+   
     messages = [...messages, message];
-    messageCount.update(n => n + 1); // Increment total message count
+    messageCount.update(n => n + 1);
   }
 
   onMount(loadMessages);
@@ -34,7 +34,7 @@
     event.preventDefault();
     if (messageText.trim() !== '') {
       addMessage(messageText);
-      messageText = ''; // Clear the input field after posting
+      messageText = '';
     }
   }
 
@@ -68,7 +68,7 @@
 
   const playlist = [
     {		
-			artist: 'EDM Radio Mashup',
+			artist: 'Radio Mashup',
       name: 'Codec Ninja',
       audio: `https://pub-090188261ed842a9ac0918908eb278e5.r2.dev/01%20codec%20ninja.mp3`
     },
