@@ -5,7 +5,7 @@
   const messageCount = writable(0);
   let messageText = '';
   let messages = [];
-  let isDarkMode = false;
+  let isDarkMode = true;
   let isLoading = false;
 
   async function loadMessages() {
@@ -139,7 +139,7 @@
     <img src="/vite.svg" alt="Book Icon" class="book-icon" />
     <span>{$messageCount}</span>
   </div>
-  <button on:click={toggleDarkMode} style="margin-bottom: 10px;">Dark Mode</button>
+  <button on:click={toggleDarkMode} style="margin-bottom: 10px;">Color Mode</button>
   <form on:submit={handleSubmit}>
     <input type="text" bind:value={messageText} placeholder="comment on the mix..." required>
     <button type="submit">comment</button>
