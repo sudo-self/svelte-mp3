@@ -4,7 +4,7 @@
   import { writable } from 'svelte/store';
   const messageCount = writable(0);
   let messageText = '';
-  let messages = ["love this!", "turn it up", "woah" "svelte!"]; 
+  let messages = ["love this!", "turn it up", "woah" "ayeeee"]; 
   let isDarkMode = true; 
   let isLoading = false;
 
@@ -60,7 +60,7 @@
   const playlist = [
     {		
 			artist: 'Radio Mashup',
-      name: 'Codec Ninja',
+      name: 'sudo-self',
       audio: `https://pub-090188261ed842a9ac0918908eb278e5.r2.dev/01%20codec%20ninja.mp3`
     },
   ];
@@ -142,9 +142,9 @@
   </div>
   <button on:click={toggleDarkMode} style="margin-bottom: 10px;">Color Mode</button>
   <form on:submit={handleSubmit}>
-    <input type="text" bind:value={messageText} placeholder="comment on the mix..." required>
+    <input type="text" bind:value={messageText} placeholder="drop a message..." required>
     <br>
-    <button type="submit">comment</button>
+    <button type="submit">POST</button>
   </form>
   <ul class="message-list">
     {#each messages as message}
