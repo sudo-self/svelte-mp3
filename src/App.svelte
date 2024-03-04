@@ -143,6 +143,7 @@
   <button on:click={toggleDarkMode} style="margin-bottom: 10px;">Color Mode</button>
   <form on:submit={handleSubmit}>
     <input type="text" bind:value={messageText} placeholder="comment on the mix..." required>
+    <br>
     <button type="submit">comment</button>
   </form>
   <ul class="message-list">
