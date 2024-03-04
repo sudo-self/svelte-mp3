@@ -1,12 +1,22 @@
+
 <script>
   import { onMount, afterUpdate } from 'svelte';
   import { writable } from 'svelte/store';
-
   const messageCount = writable(0);
   let messageText = '';
-  let messages = [];
-  let isDarkMode = true;
+  let messages = ["love this!", "Dj turn it up", "woah"]; // Add initial messages here
+  let isDarkMode = true; // Set dark mode to true initially
   let isLoading = false;
+
+  async function loadMessages() {
+    // Load more messages from the server or local storage if needed
+    messageCount.set(messages.length);
+  }
+
+  async function loadMessages() {
+    // Load more messages from the server or local storage if needed
+    messageCount.set(messages.length);
+  }
 
   async function loadMessages() {
     // You can make an HTTP request here to load initial messages from the server if needed
