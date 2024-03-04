@@ -139,7 +139,7 @@
 
   <h1>@iLostMyipad</h1>
   <div class="message-count-container">
-    <img src="/public/svelte.svg" alt="Book Icon" class="book-icon" />
+    <img src="/vite.svg" alt="Book Icon" class="book-icon" />
     <span>{$messageCount}</span>
   </div>
   <button on:click={toggleDarkMode} style="margin-bottom: 10px;">Dark Mode</button>
