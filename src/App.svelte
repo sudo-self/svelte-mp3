@@ -60,7 +60,7 @@
   const playlist = [
     {		
 			artist: 'Radio Mashup',
-      name: 'sudo-self',
+      name: 'Sudo-Self',
       audio: `https://pub-090188261ed842a9ac0918908eb278e5.r2.dev/01%20codec%20ninja.mp3`
     },
   ];
